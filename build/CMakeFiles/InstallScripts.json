@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/data/data/com.termux/files/home/what-game/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

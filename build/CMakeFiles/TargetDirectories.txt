@@ -1,0 +1,3 @@
+/data/data/com.termux/files/home/what-game/build/CMakeFiles/what.dir
+/data/data/com.termux/files/home/what-game/build/CMakeFiles/edit_cache.dir
+/data/data/com.termux/files/home/what-game/build/CMakeFiles/rebuild_cache.dir

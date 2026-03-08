@@ -1,0 +1,29 @@
+name: Build APK
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Install dependencies
+        run: |
+          sudo apt update
+          sudo apt install cmake make g++ -y
+      
+      - name: Build game
+        run: |
+          mkdir build
+          cd build
+          cmake ..
+          make
+      
+      - name: Upload APK
+        uses: actions/upload-artifact@v3
+        with:
+          name: what-game
+          path: build/what
